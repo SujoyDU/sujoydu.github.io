@@ -13,10 +13,13 @@ export class EducationComponent implements OnInit {
   }
   @HostListener('wheel', ['$event'])
   onWheelScroll(evento: WheelEvent) {
-    // Scroll up
-    if (evento.deltaY < 0) {
+    // Scroll down
+    if (evento.deltaY > 0) {
+      this.router.navigate(['skill'])
+    } else { // Scroll up
       this.router.navigate(['experience'])
     }
   }
+  
 
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-awards',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AwardsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  @HostListener('wheel', ['$event'])
+  onWheelScroll(evento: WheelEvent) {
+    // Scroll up
+    if (evento.deltaY < 0) {
+      this.router.navigate(['interest'])
+    }
   }
 
 }
