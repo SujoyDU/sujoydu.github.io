@@ -7,6 +7,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
+import { SkillsComponent } from './skills/skills.component';
+import { InterestsComponent } from './interests/interests.component';
+import { AwardsComponent } from './awards/awards.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { EducationComponent } from './education/education.component';
     SidebarComponent,
     IntroductionComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    SkillsComponent,
+    InterestsComponent,
+    AwardsComponent
   ],
   imports: [
     BrowserModule,
