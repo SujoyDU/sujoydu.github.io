@@ -16,7 +16,7 @@ export class IntroductionComponent implements OnInit {
   onWheelScroll(evento: WheelEvent) {
     // Scroll up
     if (evento.deltaY > 0) {
-      this.router.navigate(['experience'])
+      this.router.navigate(['education'])
     }
   }
 

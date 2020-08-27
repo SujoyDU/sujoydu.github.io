@@ -11,6 +11,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { InterestsComponent } from './interests/interests.component';
 import { AwardsComponent } from './awards/awards.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ResearchComponent } from './research/research.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     EducationComponent,
     SkillsComponent,
     InterestsComponent,
-    AwardsComponent
+    AwardsComponent,
+    ResearchComponent
   ],
   imports: [
     BrowserModule,

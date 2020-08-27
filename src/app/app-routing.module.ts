@@ -6,15 +6,17 @@ import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { InterestsComponent } from './interests/interests.component';
 import { AwardsComponent } from './awards/awards.component';
+import {ResearchComponent} from './research/research.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/about', pathMatch: 'full'},
   {path: 'about', component: IntroductionComponent},
-  {path: 'experience', component: ExperienceComponent},
   {path: 'education', component: EducationComponent},
-  {path: 'skill', component: SkillsComponent},
-  {path: 'interest', component: InterestsComponent},
-  {path: 'award', component: AwardsComponent}
+  {path: 'experience', component: ExperienceComponent},
+  {path: 'research', component: ResearchComponent}
+  // {path: 'skill', component: SkillsComponent},
+  // {path: 'interest', component: InterestsComponent},
+  // {path: 'award', component: AwardsComponent}
 
 ];
 

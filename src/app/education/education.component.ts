@@ -15,11 +15,11 @@ export class EducationComponent implements OnInit {
   onWheelScroll(evento: WheelEvent) {
     // Scroll down
     if (evento.deltaY > 0) {
-      this.router.navigate(['skill'])
-    } else { // Scroll up
       this.router.navigate(['experience'])
+    } else { // Scroll up
+      this.router.navigate(['about'])
     }
   }
-  
+
 
 }
